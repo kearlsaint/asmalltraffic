@@ -1,0 +1,22 @@
+.sprite{
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url("../img/sprites.png");
+	background-size: 48px 48px;
+	width: 24px;
+	height: 24px;
+	min-width: 24px;
+	min-height: 24px;
+}
+.sprite.menu{
+	background-position: 0px 0px;
+}
+.sprite.plus{
+	background-position: -24px 0px;
+}
+.sprite.send{
+	background-position: 0 -24px;
+}
+.sprite.search{
+	background-position: -24px -24px;
+}

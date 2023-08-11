@@ -1,0 +1,93 @@
+/* larger screens */
+@media only screen and (min-width: 720px){
+	#Left{
+		width: 30%;
+		min-width: 30%;
+		max-width: 30#%;
+	}
+	#Right{
+		width: 70%;
+		min-width: 70%;
+		max-width: 70%;
+	}
+}
+/* tablets? */
+@media only screen and (min-width: 481px) and (max-width: 719px){
+	#Left{
+		width: 40%;
+		min-width: 40%;
+		max-width: 40%;
+	}
+	#Right{
+		width: 60%;
+		min-width: 60%;
+		max-width: 60%;
+	}
+}
+/* mobiles */
+@media only screen and (max-width: 480px){
+	html, body{
+		font-size: 16px;
+	}
+	#Left, #Right, #Highway, #TextInputContainer{
+		transition: left 0.2s, right 0.2s, box-shadow 0.2s, background 0.2s, opacity 0.2s;
+		-moz-transition: left 0.2s, right 0.2s, box-shadow 0.2s, background 0.2s, opacity 0.2s;
+		-webkit-transition: left 0.2s, right 0.2s, box-shadow 0.2s, background 0.2s, opacity 0.2s;
+	}
+	#Left{
+		left: -80% !important;
+		width: 80% !important;
+		min-width: 80% !important;
+		max-width: 80% !important;
+	}
+	#ShowMenu{
+		display: block !important;
+	}
+	#Right{
+		width: 100% !important;
+		min-width: 100% !important;
+		max-width: 100% !important;
+	}
+	#Left.shown{
+		left: 0 !important;
+		box-shadow: 0px 0 100px 5px rgba(0, 0, 0, .5) !important;
+		z-index: 11 !important;
+	}
+	#Right.hidden{
+		right: -80% !important;
+		background: rgba(0, 0, 0, 0.5) !important;
+	}
+	#Right.hidden #Highway{
+		background: transparent;
+		opacity: 0.5 !important;
+	}
+	#Right.hidden #TextInputContainer{
+		background: transparent !important;
+		opacity: 0 !important;
+	}
+	#JoinContainer{
+		padding: 0 !important;
+	}
+	#JoinContainer>button{
+		border-radius: 0 !important;
+		padding-left: 32px !important;
+		padding-right: 32px !important;
+	}
+	#PrivateRoom{
+		border-radius: 0 !important;
+		border-width: thin 0 thin 0 !important;
+	}
+	#RoomListContainer>p,
+	#RoomMaker>div>label{
+		font-size: 16px !important;
+	}
+	input,
+	button,
+	#Highway .bubble p,
+	#Highway .bubble2 p{
+		font-size: 14px !important;
+	}
+	#Highway .info{
+		font-size:12px !important;
+	}
+}

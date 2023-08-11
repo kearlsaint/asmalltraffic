@@ -1,0 +1,8 @@
+express/
+express.io/
+node_modules/
+redis/
+socket.io/
+*.psd
+*.bat
+session

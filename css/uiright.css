@@ -1,0 +1,219 @@
+#ShowMenu,
+#RoomCreate{
+	position: fixed;
+	z-index: 12;
+	right: 16px;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background: white;
+	border: thin solid rgba(0, 0, 0, .1);
+	transition: width .1s;
+	-moz-transition: width .1s;
+	-webkit-transition: width .1s;
+	cursor: pointer;
+}
+#ShowMenu{
+	top: 64px;
+	display: none;
+}
+#RoomCreate{
+	top: 16px;
+}
+#ShowMenu:hover,
+#RoomCreate:hover{
+	background: #fff3e0;
+}
+#RoomCreate:hover{
+	width: 170px;
+}
+#RoomCreate>span{
+	display: none;
+}
+#RoomCreate:hover>span{
+	display: inline;
+}
+#Error,
+#RoomMaker{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: -1000;
+	opacity: 0;
+	transition: .1s;
+	-moz-transition: .1s;
+	-webkit-transition: .1s;
+}
+#Error.shown,
+#RoomMaker.shown{
+	z-index: 100;
+	opacity: 1;
+}
+#Error>div,
+#RoomMaker>div{
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	width: 280px;
+	height: 90px;
+	margin-left: -140px;
+	background: white;
+	border-radius: 8px;
+	padding: 16px;
+	box-shadow: 0 3px 7px 2px rgba(0, 0, 0, 0.2);
+}
+#ErrorText{
+	text-align: center;
+	font-size: 14px;
+}
+#Error>div>button,
+#RoomMaker>div>button{
+	float: right;
+	background: white;
+	border: 0 solid rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	/*padding: 8px 16px;*/
+	cursor: pointer;
+}
+#Error>div>button:hover,
+#RoomMaker>div>button:hover{
+	color: #ffa300;
+	text-decoration: underline;
+}
+#RoomHostButton,
+#RoomHostButton:hover{
+	cursor: default;
+	color: #aaaaaa !important;
+	text-decoration: none !important;
+}
+#RoomHostButton.okay{
+	cursor: pointer;
+	color: #00a3ff !important;
+}
+#RoomHostButton.okay:hover{
+	text-decoration: underline !important;
+}
+#RoomMaker>div>label{
+	font-size: 14px;
+}
+#RoomName{
+	width: 100%;
+	background: transparent;
+	border: thin solid rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	padding: 8px 16px;
+}
+
+#Highway{
+	margin: 0 auto;
+	padding: 16px 16px 70px 16px;
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	height: 100%;
+	min-height: 100%;
+	max-height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+#Highway .bubbleContainer{
+	text-align: right;
+	margin: 8px 0;
+}
+#Highway .bubbleContainer .bubble{
+	background: #22a3ff;
+	display: inline-block;
+	padding: 8px 16px;
+	border-radius: 20px 20px 4px 20px;
+	max-width: 80%;
+}
+#Highway .bubble p,
+#Highway .bubble h6{
+	margin: 0;
+	color: white;
+	text-align: left;
+	word-break: break-word;
+}
+#Highway .bubble2Container{
+	text-align: left;
+	margin: 8px 0;
+}
+#Highway .bubble2Container .bubble2{
+	background: #eaeaea;
+	display: inline-block;
+	padding: 8px 16px;
+	border-radius: 4px 20px 20px 20px;
+	max-width: 80%;
+}
+#Highway .bubble2 p,
+#Highway .bubble2 h6{
+	margin: 0;
+	text-align: left;
+	word-break: break-word;
+}
+#Highway .bubble p,
+#Highway .bubble2 p{
+	font-size: 12px;
+}
+#Highway .info{
+	background: #fff3e0;
+	font-size:11px;
+	color: #00a3ff;
+	padding: 4px 8px;
+	border: thin solid #ffa300;
+}
+
+#TextInputContainer{
+	margin: 0 auto;
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	height: 60px;
+	min-height: 60px;
+	max-height: 60px;
+	margin-top: -60px;
+	background: rgba(255, 255, 255, 0.9);
+	z-index: 10;
+	position: relative;
+	border: thin solid rgba(0, 0, 0, 0.1);
+	/*border-radius: 8px 8px 0 0;*/
+	padding: 8px 16px;
+}
+#TextInput{
+	width: 100%;
+	height: 42px;
+	background: transparent;
+	border: thin solid transparent;
+	border-bottom-color: #cccccc;
+	padding: 8px 42px 8px 8px;
+	transition: border-color .1s;
+	-moz-transition: border-color .1s;
+	-webkit-transition: border-color .1s;
+}
+#TextInput:focus{
+	border-color: #00a3ff;
+	border-radius: 8px 0 0 8px;
+}
+#TextInputContainer>button{
+	background: white;
+	border: thin solid #cccccc;
+	border-radius: 0 8px 8px 0;
+	padding: 0;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	color: #cccccc;
+	width: 42px;
+	height: 42px;
+	transition: border-color .1s, color .1s;
+	-moz-transition: border-color .1s, color .1s;
+	-webkit-transition: border-color .1s, color .1s;
+}
+#TextInputContainer>button.okay{
+	border-color: #00a3ff;
+	color: #00a3ff;
+	cursor: pointer;
+}

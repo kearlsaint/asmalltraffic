@@ -1,0 +1,77 @@
+#Title img{
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	border-bottom: thin solid rgba(0, 0, 0, 0.2);
+	margin: 0;
+}
+#RoomList{}
+#RoomListContainer{}
+#RoomListContainer>h3{
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: lighter;
+	padding: 16px;
+	margin: 0;
+	border-top: thin solid rgba(0, 0, 0, 0.1);
+}
+#RoomList>button{
+	display: block;
+	padding: 8px 16px;
+	margin: 0;
+	text-align: left;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	background: transparent;
+	border: 0 solid transparent;
+	border-bottom: thin solid rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: background .1s;
+	-moz-transition: background .1s;
+	-webkit-transition: background .1s;
+}
+#RoomList>button:hover{
+	background: #fff3e0;
+}
+#RoomList>button.active{
+	background: #555555;
+	color: white;
+}
+#PrivateRoom{
+	display: block;
+	width: 100%;
+	padding: 8px 16px;
+	text-align: left;
+	background: white;
+	border: thin solid rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	transition: border-color .1s;
+	-moz-transition: border-color .1s;
+	-webkit-transition: border-color .1s;
+}
+#PrivateRoom:focus{
+	border-color: #00a3ff;
+}
+#JoinContainer{
+	padding: 16px;
+	text-align: right;
+}
+#RoomListContainer>p{
+	text-align: left;
+	font-size: 12px;
+	color: #aaaaaa;
+	margin: 0;
+	padding: 0 16px;
+}
+#JoinContainer>button{
+	background: white;
+	border-radius: 8px;
+	border: thin solid #cccccc;
+	padding: 8px;
+	color: #cccccc;
+}
+#JoinContainer>button.okay{
+	color: #50ea50;
+	border-color: #50ea50;
+	cursor: pointer;
+}
